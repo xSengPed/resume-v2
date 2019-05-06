@@ -1,0 +1,66 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+.card-container {
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-top: none;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    
+    font-family: 'Kanit', sans-serif;
+  }
+
+.item-center {
+    padding-top: 10%;
+    text-align: center;
+}
+
+.head {
+    font-size: 24px;
+}
+
+.content {
+    font-size: 20px;
+}
+
+.interest {
+    padding-left: 10%;
+}
+.skill-icon {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 5%;
+}
+
+.repo-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+
+.card-container-2 {
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    font-family: 'Kanit', sans-serif;
+  }
+  .Box {
+      padding: 10px;
+      background: cornflowerblue;
+      text-align: center;
+      font-family: 'Kanit', sans-serif;
+      color: lightgray;
+      font-size: 14px;
+  }
