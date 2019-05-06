@@ -5,6 +5,7 @@ import {Bio,Skill} from "./Bio";
 import './style.css'
 import MyTimeline from "./MyTimeline";
 import Repository from "./Repository"
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Name = {
     fontSize : "28px",
@@ -12,21 +13,25 @@ const Name = {
 }
 const Home = () => {
     return (
-        <Container className="card-container-2">
+        
+            <Container className="card-container-2">
+            <ScrollAnimation animateIn="fadeIn">
             <Container className="item-center">
                 <div><Avatar size={200} src="http://graph.facebook.com/100000337503807/picture?type=large"></Avatar></div>
                 <br/>
                 <div style={Name}>Donnukrit Satirakul (Phone)</div>
             </Container>
+            </ScrollAnimation>
+            
             <Container>
-                <div><Bio/></div>
-                <div><Skill/></div>
+            <ScrollAnimation animateIn="fadeIn"><Bio/></ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn"><Skill/></ScrollAnimation>
             </Container>
-                <div><MyTimeline/></div>
-                <div>
-                <Repository/>
-                </div>
+            <ScrollAnimation animateIn="fadeIn"><MyTimeline/></ScrollAnimation>
+            <Repository/>  
+             
         </Container>
+        
     )
 }
 

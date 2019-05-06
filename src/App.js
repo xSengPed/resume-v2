@@ -2,7 +2,7 @@ import React from 'react';
 import Home from './Components/Home'
 import NavBar from './Components/Navbar'
 import Footer from './Components/Footer'
-
+import {Fade} from 'reactstrap'
 function App() {
 const HomePadding = {
   paddingTop: "5%"
@@ -10,7 +10,7 @@ const HomePadding = {
   return (
     <div>
     <div>
-      <NavBar/>
+    <Fade><NavBar/></Fade>
     </div>
       <div style={HomePadding}>
         <Home/>

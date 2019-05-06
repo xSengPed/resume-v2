@@ -1,16 +1,18 @@
 import React from 'react'
 import {Container} from 'reactstrap'
 import './style.css'
+import './icon-animate.css'
 import {Divider,Row,Col} from 'antd'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faJava ,
+import { 
+    faJava ,
     faHtml5 , 
     faCss3 , 
     faReact , 
     faSass ,
     faJs , 
-    faVuejs
-    ,faPython} from '@fortawesome/fontawesome-free-brands'
+    faVuejs ,
+    faPython } from '@fortawesome/fontawesome-free-brands'
     
 const Bio = () => {
     return (
@@ -43,20 +45,20 @@ const Skill = () => {
             <Col span={12}><Divider><div className="head">Intermediate</div></Divider>
             <Container>
                 <Container className="skill-icon">
-                <FontAwesomeIcon icon={faJava} size="5x"/>
-                <FontAwesomeIcon icon={faHtml5} size="5x"/>
-                <FontAwesomeIcon icon={faCss3} size="5x"/>
-                <FontAwesomeIcon icon={faSass} size="5x"/>
+                <FontAwesomeIcon icon={faJava} size="6x"/>
+                <FontAwesomeIcon icon={faHtml5} size="6x"/>
+                <FontAwesomeIcon icon={faCss3} size="6x"/>
+                <FontAwesomeIcon icon={faSass} size="6x"/>
                 </Container>
             </Container>
             </Col>
             <Col span={12}><Divider ><div className="head">Basic</div></Divider>
             <Container>
                 <Container className="skill-icon">
-                <FontAwesomeIcon icon={faReact} size="5x"/>
-                <FontAwesomeIcon icon={faVuejs} size="5x"/>
-                <FontAwesomeIcon icon={faJs} size="5x"/>
-                <FontAwesomeIcon icon={faPython} size="5x"/>
+                <FontAwesomeIcon icon={faReact} size="6x"/>
+                <FontAwesomeIcon icon={faVuejs} size="6x"/>
+                <FontAwesomeIcon icon={faJs} size="6x"/>
+                <FontAwesomeIcon icon={faPython} size="6x"/>
                 </Container>
             </Container>
             </Col>
