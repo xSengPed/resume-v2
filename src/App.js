@@ -1,25 +1,23 @@
 import React from 'react';
-import Home from './Components/Home'
+import { Route } from 'react-router-dom'
+import HomeRender from './Components/HomeRender'
+import Calculator from './Components/Application/Calculator'
 import NavBar from './Components/Navbar'
-import Footer from './Components/Footer'
 import {Fade} from 'reactstrap'
-function App() {
-const HomePadding = {
-  paddingTop: "5%"
-}
-  return (
-    <div>
-    <div>
-    <Fade><NavBar/></Fade>
-    </div>
-      <div style={HomePadding}>
-        <Home/>
-        
-      </div>
-      
-      <Footer/>
-    </div>
-  );
-}
 
+const Main = () => <HomeRender/>
+const MyApp = () => <Calculator/>
+
+
+
+const App = () => {
+  return (
+      <div> 
+        <Fade><NavBar/></Fade>
+        <Route exact path="/" component={Main} />
+        <Route exact path="/app" component={MyApp} />
+      </div>
+  )
+}
 export default App;
+

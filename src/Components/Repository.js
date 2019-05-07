@@ -1,8 +1,9 @@
 import React from 'react'
-import {Divider,Button} from 'antd'
+import {Divider,Button,Row,Col} from 'antd'
 import {Container} from "reactstrap"
 import './style.css'
 import ScrollAnimation from 'react-animate-on-scroll';
+import {faTh} from '@fortawesome/fontawesome-svg-core'
 
 class Repository extends React.Component {
     render(){
@@ -21,8 +22,22 @@ class Repository extends React.Component {
                 <ScrollAnimation animateIn="fadeIn">
                 <Container>
                     <Divider><div className="head">My Web Application</div></Divider>
-                    <Container>
-                        <div>Coming Soon ....</div>
+                    <Container>   
+                            <Row style={{textAlign:"center"}}>
+                                <Col span={12}>
+                                 <a href="app">
+                                    <div>
+                                        <i class="fas fa-thermometer-half fa-5x"></i>
+                                        <p>TempConvert</p>
+                                    </div>
+                                </a>
+                                </Col>
+                                <Col span={12}>
+                                <i class="fas fa-calculator fa-5x"></i>
+                                <p>CalGrade</p>
+                                </Col>
+                            </Row>
+        
                     </Container>
                 </Container>
                 </ScrollAnimation>
