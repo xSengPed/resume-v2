@@ -3,7 +3,18 @@ import {Divider,Button,Row,Col} from 'antd'
 import {Container} from "reactstrap"
 import './style.css'
 import ScrollAnimation from 'react-animate-on-scroll';
-import {faTh} from '@fortawesome/fontawesome-svg-core'
+
+
+const iconResponsive = {
+    fontSize: "4.5vw",
+    display : "flex",
+    justifyContent : "space-around",
+    justifyItems : "center"
+} 
+const fontResponsive = {
+    fontSize: "1.25vw",
+} 
+
 
 class Repository extends React.Component {
     render(){
@@ -27,14 +38,14 @@ class Repository extends React.Component {
                                 <Col span={12}>
                                  <a href="app">
                                     <div>
-                                        <i class="fas fa-thermometer-half fa-5x"></i>
-                                        <p>TempConvert</p>
+                                        <i class="fas fa-thermometer-half" style={iconResponsive}></i>
+                                        <p style={fontResponsive}>TempConvert</p>
                                     </div>
                                 </a>
                                 </Col>
                                 <Col span={12}>
-                                <i class="fas fa-calculator fa-5x"></i>
-                                <p>CalGrade</p>
+                                <i class="fas fa-calculator" style={iconResponsive}></i>
+                                <p style={fontResponsive}>CalGrade</p>
                                 </Col>
                             </Row>
         

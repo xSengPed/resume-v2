@@ -7,10 +7,7 @@ import MyTimeline from "./MyTimeline";
 import Repository from "./Repository"
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const Name = {
-    fontSize : "28px",
-    paddingTop : "10px"
-}
+
 const Home = () => {
     return (
         
@@ -19,7 +16,7 @@ const Home = () => {
             <Container className="item-center">
                 <div><Avatar size={200} src="http://graph.facebook.com/100000337503807/picture?type=large"></Avatar></div>
                 <br/>
-                <div style={Name}>Donnukrit Satirakul (Phone)</div>
+                <div className="NameCaption">Donnukrit Satirakul (Phone)</div>
             </Container>
             </ScrollAnimation>
             

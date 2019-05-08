@@ -13,7 +13,14 @@ import {
     faJs , 
     faVuejs ,
     faPython } from '@fortawesome/fontawesome-free-brands'
-    
+
+const iconResponsive = {
+    fontSize: "4.5vw",
+    display : "flex",
+    justifyContent : "space-around",
+    justifyItems : "center"
+} 
+
 const Bio = () => {
     return (
         <Container>
@@ -44,21 +51,25 @@ const Skill = () => {
          <Row gutter={24}>
             <Col span={12}><Divider><div className="head">Intermediate</div></Divider>
             <Container>
-                <Container className="skill-icon">
-                <FontAwesomeIcon icon={faJava} size="6x"/>
-                <FontAwesomeIcon icon={faHtml5} size="6x"/>
-                <FontAwesomeIcon icon={faCss3} size="6x"/>
-                <FontAwesomeIcon icon={faSass} size="6x"/>
+                <Container>
+                <div style={iconResponsive}>
+                <FontAwesomeIcon icon={faJava}/>
+                <FontAwesomeIcon icon={faHtml5} />
+                <FontAwesomeIcon icon={faCss3} />
+                <FontAwesomeIcon icon={faSass} />
+                </div>
                 </Container>
             </Container>
             </Col>
             <Col span={12}><Divider ><div className="head">Basic</div></Divider>
             <Container>
-                <Container className="skill-icon">
-                <FontAwesomeIcon icon={faReact} size="6x"/>
-                <FontAwesomeIcon icon={faVuejs} size="6x"/>
-                <FontAwesomeIcon icon={faJs} size="6x"/>
-                <FontAwesomeIcon icon={faPython} size="6x"/>
+                <Container>
+                <div style={iconResponsive}>
+                <FontAwesomeIcon icon={faReact}/>
+                <FontAwesomeIcon icon={faVuejs}/>
+                <FontAwesomeIcon icon={faJs}/>
+                <FontAwesomeIcon icon={faPython}/>
+                </div>
                 </Container>
             </Container>
             </Col>

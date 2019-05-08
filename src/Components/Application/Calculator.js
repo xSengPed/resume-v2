@@ -1,9 +1,9 @@
 import React from 'react'
-import { parse } from 'url';
+//import { parse } from 'url';
 import {Container} from 'reactstrap'
 import {Input,Button,Row,Col,Divider} from 'antd'
 import '../style.css'
-import { text } from '@fortawesome/fontawesome-svg-core';
+
 
 const inputWidth = {
     width:"200px"
@@ -12,41 +12,28 @@ class Calculator extends React.Component {
     
     constructor(props) {
     super(props)
-    this.state = {Celcius : '',Farenheit : ''}    
-    this.handleChangeCelcius = this.handleChangeCelcius.bind(this)
-    this.handleChangeFarenheit = this.handleChangeFarenheit.bind(this)
+        this.State = {C:'',F:''}
+        this.handleChange = this.handleChange.bind(this)
+    }
+    handleChange(e) {
+        this.props.onChange(e.targey.value)
+    }
 
-    }
-    handleChangeCelcius(event) {
-        this.setState({Celcius: parseFloat(event.target.value)})
-        
-    }
-    handleChangeFarenheit(event){
-        this.setState({Farenheit: parseFloat(event.target.value)})
-        console.log('farenheit was change')
-        console.log(this.state.Farenheit)
-    }
-    handleClickClear(event){
-        this.setState({Celcius: ''})
-        this.setState({Farenheit: parseFloat(event.target.value)})
-    }
+   
     render(){
         
         return (
            <Container className="card-container">
            <h1>Under Construction ....</h1>
             <div>
-            <Divider>Temperature Converter</Divider>
+                <Divider>Temperature Converter</Divider>
                 <Container style={inputWidth}>
-                    <label>Celcius<Input value={this.state.Celcius} onChange = {this.handleChangeCelcius} allowClear="true"/></label><br/>
-                    <label>Farenheit<Input value={this.state.Farenheit} onChange = {this.handleChangeFarenheit} alowClear="true"/></label><br/>
-                    <br/>
-                    <div className="centered">
-                        <p><Button type="primary" block>Convert</Button></p>
-                        <p><Button type="primary" onClick={this.handleClickClear} block >Clear</Button></p>
-                    </div>
-                </Container>
-                
+                C
+                  <Input onChange={this.handleChange}/>
+                F
+                  <Input/>
+                  <Button type="primary" onClick={this.handleConvert}>Convert</Button>
+                </Container>   
             </div>
            </Container>
         )
