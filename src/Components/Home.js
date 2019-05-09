@@ -1,34 +1,40 @@
 import React from 'react'
 import {Container} from 'reactstrap'
-import {Avatar} from 'antd'
-import {Bio,Skill} from "./Bio";
-import './style.css'
-import MyTimeline from "./MyTimeline";
-import Repository from "./Repository"
+import {Bio,Skill,ProfilePicture} from "./Bio";
+import TimelineComponent from "./Timeline";
+import Repository from './Repository';
+import MyWebApp from './MyWebApp';
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import './css/style.css'
 
 const Home = () => {
     return (
-        
-            <Container className="card-container-2">
+        <Container className = "card-container">
             <ScrollAnimation animateIn="fadeIn">
-            <Container className="item-center">
-                <div><Avatar size={200} src="http://graph.facebook.com/100000337503807/picture?type=large"></Avatar></div>
-                <br/>
-                <div className="NameCaption">Donnukrit Satirakul (Phone)</div>
-            </Container>
+                <Container><ProfilePicture/></Container>
             </ScrollAnimation>
-            
-            <Container>
-            <ScrollAnimation animateIn="fadeIn"><Bio/></ScrollAnimation>
-            <ScrollAnimation animateIn="fadeIn"><Skill/></ScrollAnimation>
-            </Container>
-            <ScrollAnimation animateIn="fadeIn"><MyTimeline/></ScrollAnimation>
-            <Repository/>  
-             
-        </Container>
-        
+
+            <ScrollAnimation animateIn="fadeIn">
+                <Container><Bio/></Container> 
+            </ScrollAnimation> 
+
+            <ScrollAnimation animateIn="fadeIn">
+                <Container><Skill/></Container> 
+            </ScrollAnimation> 
+
+            <ScrollAnimation animateIn="fadeIn">
+                <Container><TimelineComponent/></Container> 
+            </ScrollAnimation> 
+
+            <ScrollAnimation animateIn="fadeIn">
+                <Container><Repository/></Container> 
+            </ScrollAnimation> 
+
+            <ScrollAnimation animateIn="fadeIn">
+                <Container><MyWebApp/></Container> 
+            </ScrollAnimation>
+ 
+        </Container>    
     )
 }
 

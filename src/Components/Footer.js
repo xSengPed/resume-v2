@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './css/style.css'
 const Footer = () => {
     return (
         <div className="Box">
@@ -7,5 +7,4 @@ const Footer = () => {
         </div>
     )
 }
-
 export default Footer

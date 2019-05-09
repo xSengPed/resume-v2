@@ -110,7 +110,19 @@
     transition: color .5s ease;
   }
   
+  .fa-docker:hover {
+    color: #4d97f7;
+    cursor: pointer;
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease;
+  }
   
+  .fa-docker {
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease;
+  }
   
   
   

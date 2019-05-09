@@ -1,21 +1,21 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
-import HomeRender from './Components/HomeRender'
-import Calculator from './Components/Application/Calculator'
+import Home from './Components/Home'
+//import Calculator from './Components/Application/Calculator'
 import NavBar from './Components/Navbar'
 import {Fade} from 'reactstrap'
+import Footer from './Components/Footer';
 
-const Main = () => <HomeRender/>
-const MyApp = () => <Calculator/>
-
-
+const Main = () => <Home/>
+//const MyApp = () => <Calculator/>
 
 const App = () => {
   return (
       <div> 
         <Fade><NavBar/></Fade>
-        <Route exact path="/" component={Main} />
-        <Route exact path="/app" component={MyApp} />
+        <Route exact path="/"component={Main}/>
+        <Route exact path="/app"/>
+        <Footer/>
       </div>
   )
 }
