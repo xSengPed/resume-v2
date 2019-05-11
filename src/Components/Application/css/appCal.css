@@ -1,0 +1,8 @@
+.box-container {
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    
+}
+.centered {
+    display: flex;
+    text-align: center;
+}
