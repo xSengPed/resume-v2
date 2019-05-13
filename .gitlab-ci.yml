@@ -15,7 +15,7 @@ install:
   only:
     - master
   script:
-    - yarn install
+    - yarn
   artifacts:
     paths:
       - node_modules
