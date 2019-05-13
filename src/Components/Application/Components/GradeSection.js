@@ -35,9 +35,6 @@ class GradeSection extends React.Component {
       })
       
     }
-    handleChangegpa = (value) => {
-      this.setState({ gpa: value });
-    }
     one = (value) => {
       this.setState({ a: value},()=>{
         this.loadData(value)
