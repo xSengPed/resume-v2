@@ -22,14 +22,22 @@ class MyWebApp extends React.Component {
                     <div className="head">My Web Application</div>
                 </Divider>
                 <Row style={{ textAlign: "center" }}>
-                    <Col span={12}>
+                    <Col span={8}>
                         <a href="tempconvert">                      
                         <div>
                             <i class="fas fa-thermometer-half" style={iconResponsive}></i>
                             <p style={fontResponsive}>TempConvert</p>
                         </div></a>
                     </Col>
-                    <Col span={12}>
+                    <Col span={8}>
+                        <a href="contact-cal">
+                            <div>
+                                <i class="far fa-credit-card" style={iconResponsive}></i> 
+                                <p style={fontResponsive}>Contact-Cal</p>
+                            </div>
+                        </a>
+                    </Col>
+                    <Col span={8}>
                         <a href="appgrade">
                             <div>
                                 <i class="fas fa-calculator" style={iconResponsive}></i>

@@ -1,30 +1,47 @@
-import React from 'react'
-import { Layout, Menu  } from 'antd';
+import React from 'react';
+import { Route } from 'react-router-dom'
+import Home from './Components/Home'
+import Calculator from './Components/Application/Calculator'
+import Footer from './Components/Footer';
+import TempConvert from './Components/Application/TempConvert'
+import Navbar from './Components/Navbar'
+import './App.css'
 
+const Main = () => <Home/>
+const MyAppGrade = () => <Calculator/>
+const TempConverter = () => <TempConvert/>
 
+const { Header, Content, Footer } = Layout;
 
-class NavBar extends React.Component {
-
-    render() {
-      const { Header} = Layout;
-      const menubar = {
-        
-      } 
-        return (
-            <Layout className="layout">
-            <Header>
-              <div className="logo" />
-              <Menu theme="dark" mode="horizontal" style={{ lineHeight: '64px' }}>
-                <Menu.Item key="1">Home<a href="/"></a></Menu.Item>
-                <Menu.Item key="2">Facebook<a href="https://www.facebook.com/phone.dnk"></a></Menu.Item>
-                <Menu.Item key="3">Instagram<a href="https://www.instagram.com/Iphone.coepk"></a></Menu.Item>
-                <Menu.Item key="4">GitLab<a href="https://gitlab.com/kalima007c"></a></Menu.Item>
-                <Menu.Item key="5">Medium<a href="https://medium.com/@dev.dnk"></a></Menu.Item>
-              </Menu>
-            </Header>
-          </Layout>
-        )
-    }
+const App = () => {
+  return (
+    <Layout className="layout">
+    <Header>
+      <div className="logo" />
+      <Menu
+        theme="dark"
+        mode="horizontal"
+        defaultSelectedKeys={['2']}
+        style={{ lineHeight: '64px' }}
+      >
+        <Menu.Item key="1">nav 1</Menu.Item>
+        <Menu.Item key="2">nav 2</Menu.Item>
+        <Menu.Item key="3">nav 3</Menu.Item>
+      </Menu>
+    </Header>
+    <Content style={{ padding: '0 50px' }}>
+      <Breadcrumb style={{ margin: '16px 0' }}>
+        <Breadcrumb.Item>Home</Breadcrumb.Item>
+        <Breadcrumb.Item>List</Breadcrumb.Item>
+        <Breadcrumb.Item>App</Breadcrumb.Item>
+      </Breadcrumb>
+      <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+        <Route exact path="/" component={Main}/>
+      </div>
+    </Content>
+    <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+  </Layout>
+  )
 }
+export default App;
 
-export default NavBar
