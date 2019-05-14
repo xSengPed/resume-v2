@@ -1,7 +1,6 @@
 import React from 'react'
 import {Container} from 'reactstrap'
 import GradeSection from './Components/GradeSection'
-import {Tabs} from 'antd'
 import './css/appCal.css'
   
 class Calculator extends React.Component {

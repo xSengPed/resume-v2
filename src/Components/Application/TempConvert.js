@@ -11,7 +11,7 @@ class TempConvert extends React.Component {
         }
     }
     loadData =  async() => {
-        const {Farenheit,Celcius} = this.state
+
     }
 
     handleChangeF = (value) => {

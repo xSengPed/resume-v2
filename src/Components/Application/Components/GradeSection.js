@@ -17,7 +17,6 @@ class GradeSection extends React.Component {
       }
     
     loadData = async() => {
-        const {a,b,c,gpa,gpac} = this.state
     }
 
     calgpa = () =>{

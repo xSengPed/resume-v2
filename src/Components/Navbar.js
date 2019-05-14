@@ -1,11 +1,15 @@
 import React from 'react'
 import { Layout, Menu  } from 'antd';
 
-const { Header } = Layout;
+
 
 class NavBar extends React.Component {
 
     render() {
+      const { Header} = Layout;
+      const menubar = {
+        
+      } 
         return (
             <Layout className="layout">
             <Header>
