@@ -87,7 +87,7 @@ class GradeSection extends React.Component {
         }
         return (
           <Container>
-            <Divider><div style = {{fontSize:"3vw",paddingTop:"20px"}} className="app-header"><i>Grade Prediction System</i></div></Divider>
+            <Divider><div style = {{fontSize:"3vw",paddingTop:"20px"}} className="app-header"><i>ระบบช่วยคำนวนเกรดเฉลี่ย</i></div></Divider>
           <Row style={{textAlign:"center",paddingTop:"20px"}}>
             <Col span={8}>No.</Col>
             <Col span={8}>Credit</Col>
